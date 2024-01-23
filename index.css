@@ -1,0 +1,32 @@
+.hero-container {
+    /* width: 100%; */
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: column;
+    /* Set the flex-direction to column */
+    margin-left: 5%;
+}
+
+.hero-container-papa {
+    background-image: url(./pexels-suzy-hazelwood-1629236.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    /* position: absolute;  */
+     top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Adjust the last value for transparency */
+    z-index: 1;
+  }  
+
+  .txt1 {
+    color: white;
+    filter: brightness(150%);
+  }
