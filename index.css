@@ -1,4 +1,4 @@
-.hero-container {
+.hero-container,.project-container {
     /* width: 100%; */
     height: 100vh;
     display: flex;
@@ -9,12 +9,15 @@
     margin-left: 5%;
 }
 
-.hero-container-papa {
+.hero-container-papa{
     background-image: url(./pexels-suzy-hazelwood-1629236.jpg);
     background-size: cover;
     position: relative;
 }
 
+.project-container-papa {
+    background-color: aquamarine;
+}
 .overlay {
     /* position: absolute;  */
      top: 0; 
@@ -30,3 +33,10 @@
     color: white;
     filter: brightness(150%);
   }
+
+  /* styles.css */
+.nav-link.active {
+    color: #ffc107; /* Change the color as needed */
+    font-weight: bold;
+    /* Add any additional styles for the active link */
+}
