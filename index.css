@@ -40,3 +40,52 @@
     font-weight: bold;
     /* Add any additional styles for the active link */
 }
+
+
+@keyframes jump-up {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes jump-down {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(20px);
+    }
+    60% {
+        transform: translateY(10px);
+    }
+}
+
+.card {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card.jumping-up {
+    animation: jump-up 0.8s ease-in-out infinite;
+}
+
+.card.jumping-down {
+    animation: jump-down 0.8s ease-in-out infinite;
+}
+
+.card-container:hover .card.jumping-up {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-container.card-container-2:hover .card.jumping-down {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
